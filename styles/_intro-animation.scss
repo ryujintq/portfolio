@@ -1,0 +1,144 @@
+.intro-animation{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 80rem;
+    transform-style: preserve3d;
+    text-align: center;
+    h1 {
+      font-size: 17rem;
+      -webkit-text-fill-color:rgba(27, 39, 53, 0.6);
+      -webkit-text-stroke-width: 0.2rem;
+      -webkit-text-stroke-color: $yellow;
+      line-height: 0.9;
+    }
+    h3 {
+      font-size: 3rem;
+      letter-spacing: 2rem;
+      font-weight: 500;
+    }
+  }
+
+  .top {
+    animation: top 5s ease-out forwards;
+  }
+  .bottom {
+    animation: bottom 5s ease-out forwards;
+  }
+  .byline span{
+    animation: spin-letters 5s linear forwards;
+    display: inline-block;
+  }
+  .byline {
+    animation: move-byline 5s linear forwards;
+  }
+
+  /* Keyframes */
+@keyframes top {
+    0% {
+      opacity: 0;
+      transform: scale(1.5) translateY(-0.5rem);
+    }
+    20% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateZ(-1000rem);
+    }
+  }
+  
+  @keyframes bottom {
+    0% {
+      opacity: 0;
+      transform: scale(1.5) translateY(0.25rem);
+    }
+    20% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateZ(-1000rem);
+    }
+  }
+  
+  @keyframes spin-letters {
+    0%, 10% {
+      transform: rotateY(90deg);
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    70%, 90% {
+      transform: rotateY(0);
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateZ(-1000rem);
+    }
+  }
+
+  @keyframes move-byline {
+    0% {
+      transform: translateZ(5em);
+    }
+    99% {
+      transform: translateZ(0);
+    }
+    100% {
+      transform: translateZ(-1000rem);
+    }
+  }
+
+
+  
+  @media(max-width: 1050px) {
+    .intro-animation{
+      h1 {
+        font-size: 10rem;
+        line-height: 0.9;
+      }
+      h3 {
+        font-size: 2rem;
+        letter-spacing: 1rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  @media(max-width: 700px) {
+    .intro-animation{
+      h1 {
+        font-size: 8rem;
+      }
+      h3 {
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  @media(max-width: 420px) {
+    .intro-animation{
+      h1 {
+        font-size: 5rem;
+      }
+      h3 {
+        font-size: 1.2rem;
+        letter-spacing: 0.3rem;
+        font-weight: 500;
+      }
+    }
+  }

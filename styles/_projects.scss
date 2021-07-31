@@ -1,0 +1,291 @@
+.projects {
+  width: 100vw;
+}
+
+.projects-container {
+  margin-top: 5vh;
+  padding-top: 7rem;
+  position: relative;
+  color: $yellow;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 250px;
+  max-width: 250px;
+  min-width: 250px;
+  height: 300px;
+  margin: 3rem 4rem;
+  background-color: rgba(27, 39, 53, 0.7);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: $yellow;
+  box-shadow: 0 0.5rem 1rem $yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-back {
+  display: none;
+}
+
+.card-clone {
+  position: fixed;
+  display: none;
+  width: 200px;
+  height: 250px;
+  transition: all 0.6s ease-in-out;
+  background-color: rgba(27, 39, 53, 0.98);
+}
+
+.clone-container {
+  max-width: 140rem;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 2rem;
+  opacity: 0;
+  padding-bottom: 3rem;
+}
+
+.close-icon {
+  position: absolute;
+  right: 4rem;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 4;
+}
+.close-icon:before,
+.close-icon:after {
+  position: absolute;
+  left: 20px;
+  content: " ";
+  height: 30px;
+  width: 3px;
+  background-color: $yellow;
+}
+.close-icon:before {
+  transform: rotate(45deg) translate(-4px, 5px);
+}
+.close-icon:after {
+  transform: rotate(-45deg) translate(-5px, -4px);
+}
+
+.carousel {
+  max-width: 90rem;
+  margin: auto;
+  h1 {
+    text-align: center;
+  }
+}
+
+.row {
+  margin-top: 10rem;
+}
+
+.slider {
+  position: relative;
+  height: 60vh;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.5s;
+}
+
+.showing {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slider-button {
+  cursor: pointer;
+  color: $yellow;
+  font-weight: bold;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  border: 1px solid $yellow;
+  z-index: 3;
+  position: absolute;
+  text-align: center;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.slider-button:hover {
+  color: $dark;
+  background-color: $yellow;
+}
+
+.button-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5000;
+}
+
+.button-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5000;
+}
+
+.project-description {
+  max-width: 90rem;
+  margin: 0 auto;
+  p {
+    color: white;
+  }
+}
+
+.slide-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+  align-self: center;
+}
+
+.beautify1 {
+  background-image: url(../../images/beautify-login.jpg);
+}
+.beautify2 {
+  background-image: url(../../images/beautify-info.jpg);
+}
+.beautify3 {
+  background-image: url(../../images/beautify-times.jpg);
+}
+.beautify4 {
+  background-image: url(../../images/beautify-order.jpg);
+}
+.beautify5 {
+  background-image: url(../../images/beautify-bookings.jpg);
+}
+.beautify6 {
+  background-image: url(../../images/beautify-calendar.jpg);
+}
+
+.notify1 {
+  background-image: url(../../images/notes-signup.png);
+}
+.notify2 {
+  background-image: url(../../images/notes-main.png);
+}
+.notify3 {
+  background-image: url(../../images/notes-note.png);
+}
+
+.interverse1 {
+  background-image: url(../../images/interverse-login.png);
+}
+
+.interverse2 {
+  background-image: url(../../images/interverse-signup.png);
+}
+
+.interverse3 {
+  background-image: url(../../images/interverse1.png);
+}
+
+.interverse4 {
+  background-image: url(../../images/interverse2.png);
+}
+
+.interverse5 {
+  background-image: url(../../images/interverse3.png);
+}
+
+.interverse6 {
+  background-image: url(../../images/interverse4.png);
+}
+
+.interverse7 {
+  background-image: url(../../images/interverse5.png);
+}
+
+.superfit1 {
+  background-image: url(../../images/superfit1.png);
+}
+
+.superfit2 {
+  background-image: url(../../images/superfit2.png);
+}
+
+.superfit3 {
+  background-image: url(../../images/superfit3.png);
+}
+
+.superfit4 {
+  background-image: url(../../images/superfit4.png);
+}
+
+.superfit5 {
+  background-image: url(../../images/superfit5.png);
+}
+
+.doc-share1 {
+  background-image: url(../../images/doc-share1.png);
+}
+
+.doc-share2 {
+  background-image: url(../../images/doc-share2.png);
+}
+
+.doc-share3 {
+  background-image: url(../../images/doc-share3.png);
+}
+
+.instapic1 {
+  background-image: url(../../images/instapic1.png);
+}
+
+.instapic2 {
+  background-image: url(../../images/instapic2.png);
+}
+
+.instapic3 {
+  background-image: url(../../images/instapic3.png);
+}
+
+.instapic4 {
+  background-image: url(../../images/instapic4.png);
+}
+
+@media (max-width: 800px) {
+  .close-icon {
+    top: 1.5rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .close-icon {
+    right: 2rem;
+  }
+}

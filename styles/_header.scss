@@ -1,0 +1,108 @@
+header {
+  background-color: rgba(27, 39, 53, 0.7);
+  color: $yellow;
+  box-shadow: 0 0.2rem 2rem $yellow;
+  width: 100vw;
+  font-size: 1.6rem;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  backface-visibility: hidden;
+  opacity: 0;
+  animation: intro 3s ease-in-out 5s forwards;
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 5rem;
+    padding: 0 4rem;
+  }
+
+  h3 {
+    font-family: "Cinzel Decorative", sans-serif;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    li {
+      padding-left: 6rem;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $yellow;
+}
+
+.burger {
+  display: none;
+  z-index: 1;
+  cursor: pointer;
+}
+
+@keyframes intro {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1140px) {
+  .burger {
+    display: block;
+    transition: all 0.5s ease-in-out;
+  }
+
+  header {
+    ul {
+      position: absolute;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100vh;
+      top: 0vh;
+      right: 0;
+      background-color: rgba(27, 39, 53, 0.95);
+      width: 50%;
+      transform: translateX(100%);
+      transition: all 0.5s ease-in-out;
+      opacity: 0;
+      li {
+        padding: 0;
+      }
+    }
+  }
+
+  ul.toggle {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  .burger div {
+    height: 0.3rem;
+    width: 2.5rem;
+    background-color: $yellow;
+    margin: 0.4rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .line1.toggle {
+    transform: rotate(-45deg) translate(-4px, 6px);
+  }
+  .line2.toggle {
+    opacity: 0;
+  }
+  .line3.toggle {
+    transform: rotate(45deg) translate(-4px, -6px);
+  }
+}
+
+@media (max-width: 540px) {
+  header {
+    .container {
+      padding: 0 2rem;
+    }
+  }
+}
