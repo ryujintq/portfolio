@@ -1046,6 +1046,30 @@ a {
   background-image: url(../../images/instapic4.png);
 }
 
+.ravensgate1 {
+  background-image: url(../../images/ravensgate1.png);
+}
+
+.ravensgate2 {
+  background-image: url(../../images/ravensgate2.png);
+}
+
+.ravensgate3 {
+  background-image: url(../../images/ravensgate3.png);
+}
+
+.ravensgate4 {
+  background-image: url(../../images/ravensgate4.png);
+}
+
+.ravensgate5 {
+  background-image: url(../../images/ravensgate5.png);
+}
+
+.ravensgate6 {
+  background-image: url(../../images/ravensgate6.png);
+}
+
 @media (max-width: 800px) {
   .close-icon {
     top: 1.5rem;
